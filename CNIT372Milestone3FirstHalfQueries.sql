@@ -1,3 +1,7 @@
+/*Teamwork division: We chose to separate the tasks into creating the tables/importing the data and writing the query answers to the questions from milestone 2.
+J.P. McKenney handled writing the query answers to the questions and Owen Pifer handled creating the tables and importing the data.*/
+
+
 --Question 1
 select accountname from creator inner join country on creator.countryid = country.countryid where country = 'United States' order by subscribers desc;
 
@@ -30,6 +34,8 @@ for i in 1 .. 10 loop
 end loop;
 close countries;
 end;
+
+
 
 
 
