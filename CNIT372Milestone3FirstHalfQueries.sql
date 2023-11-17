@@ -1,11 +1,16 @@
+--Question 1
 select accountname from creator inner join country on creator.countryid = country.countryid where country = 'United States' order by subscribers desc;
 
+--Question2
 select subscribers from creator where accountname = 'MrBeast'; 
 
+--Question 3
 select accountname from creator where highest_monthly_earnings in (select max(highest_monthly_earnings) from creator;
 
+--Question 4
 select accountname from creator where lowest_monthly_earnings in (select max(lowest_monthly_earnings) from creator;
 
+--Question 5
 create or replace procedure highestPops as
 
 cursor countries is select * from country order by population;
