@@ -20,7 +20,7 @@ for i in 1 .. 10 loop
 	fetch countries into cur_country;
 	v_population := cur_country.population;
 	v_urban_pop := cur_country.urban_population;
-	v_countryname := cur_country.countryname
+	v_countryname := cur_country.countryname;
 	dbms_output.put_line(v_countryname || ' has a population of: ' || v_population || ' and an urban population of ' || v_urban_pop);
 end loop;
 close countries;
